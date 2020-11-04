@@ -21,6 +21,26 @@ class Main {
       String NextLine = getScanner.nextLine();
       Names[i] = NextLine;
     }
+    
+    System.out.println("\n");
+    System.out.println("Here are the results: \n");
+    
+    int countloop = 0;
+
+    while (countloop < Names.length) {
+      if (Names[countloop] == null || Names[countloop] ==  ""){ 
+        System.out.println("Noone sits on seat #" + Seats[countloop]);
+      }
+      else if (Names[countloop] != null && Names[countloop] !=  ""){
+        System.out.println(Names[countloop] + " sits on seat #" + Seats[countloop]);
+      }
+
+      countloop++;
+    }
+
+System.out.println("It's the first day of school in Ms.Benny's class and she needs your help assigning seats to her students.\n");
+
+    getScanner.close();
 
   }
 }
