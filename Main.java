@@ -16,5 +16,11 @@ class Main {
       return;
     }
 
+    for (int i = 0; i < Names.length; i++) {
+      System.out.println("Who should sit in seat #" + i + "? \n");
+      String NextLine = getScanner.next();
+      Names[i] = NextLine;
+    }
+
   }
 }
