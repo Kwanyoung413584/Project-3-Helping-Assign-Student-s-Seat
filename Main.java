@@ -17,8 +17,8 @@ class Main {
     }
 
     for (int i = 0; i < Names.length; i++) {
-      System.out.println("Who should sit in seat #" + i + "? \n");
-      String NextLine = getScanner.next();
+      System.out.println("Who should sit in seat #" + Seats[i] + "? \n");
+      String NextLine = getScanner.nextLine();
       Names[i] = NextLine;
     }
 
